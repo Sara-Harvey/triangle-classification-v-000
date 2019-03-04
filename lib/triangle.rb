@@ -7,7 +7,7 @@ class Triangle
   end
 
   def valid?
-    if @sides.none? {|x| x < 1} &&
+    if @sides.none? {|x| x == 0} &&
       (@sides[0] + @sides[1]) > @sides[2] && 
       (@sides[1] + @sides[2]) > @sides[0] && 
       (@sides[0] + @sides[2]) > @sides[1]
